@@ -1,6 +1,7 @@
 // sets current time in header
 $("#currentDay").text(moment().format("dddd, MMMM Do, YYYY"));
 
+// loads saved events, color-codes events when page is loaded
 $(document).ready(function () {
   auditEvents();
   $("#event-hour-nine").val(localStorage.getItem("hour-9"));
